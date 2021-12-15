@@ -1,0 +1,34 @@
+#include<stdio.h>
+void main() 
+{
+  int a,x,y,z,w,c;
+  
+  printf("Enter value in kilometre:");
+  scanf("%d",&a);
+  
+  printf("\n1.for in meter");
+  printf("\n2.for in centimetre");
+  printf("\n3.for in feet");
+  printf("\n4.for in inch");
+  scanf("%d",&c);
+  x=1000;
+  y=100000;
+  z=3280.84;
+  w=39370.1;
+  switch(c)
+{
+  case 1:   
+    printf("%d * %d = %d",a,x,a*x);   
+  break;
+  case 2:   
+    printf("%d * %d = %d",a,y,a*y);   
+  break;
+  case 3:   
+    printf("%d * %d = %d",a,z,a*z);   
+  break;
+  case 4:   
+    printf("%d * %d = %d",a,w,a*w);    
+  break;
+}
+}
+    
